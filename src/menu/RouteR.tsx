@@ -3,8 +3,11 @@ import { AboutMe } from "../components/AboutMe";
 import { Projects } from "../components/Projects";
 import { Hobbies } from "../components/Hobbies";
 import { ErrorComponent } from "./ErrorComponent";
-import Prueba, { Inicio } from "../components/Inicio";
+import  { Inicio } from "../components/Inicio";
+import { Preguntas } from "../components/Preguntas";
 import Registro from "../components/Registro";
+import { Quiz } from "../components/Quiz";
+
 export const RouterR = () => {
   return (
     <Router>
@@ -16,6 +19,7 @@ export const RouterR = () => {
             <Route path="/AboutMe" element={<AboutMe/>}/>
             <Route path="/Projects" element={<Projects/>}/>
             <Route path="/Hobbies" element={<Hobbies/>}/>
+            <Route path="/Quiz" element= {<Quiz/>}/>
             <Route path="*" element={<ErrorComponent/>}/>
            
            

@@ -1,19 +1,15 @@
 export const ErrorComponent = () => {
     return (
       <>
-          <h1>WTF??</h1>
-          <img 
-          src="https://preview.redd.it/div-div-div-meme-div-div-div-v0-iordk39mu21b1.jpg?auto=webp&s=6ba75405dc52a80b9656134fe0724051322967df" 
-          alt="perdido" />
-          <div>
-            <div>
-              <div>
-                <div>
-                  <h1 className="text-5xl">El verdadero front-end son los divs que hicicimos en el camino</h1>
-                </div>
-              </div>
-            </div>
-          </div>
+         <div className="flex items-center justify-center h-screen bg-black text-white">
+      <div className="text-center">
+        <h1 className="text-6xl font-bold text-purple-600">Error 404</h1>
+        <p className="mt-4 text-xl text-purple-400">Página no encontrada</p>
+        <a href="/" className="mt-6 inline-block px-6 py-3 bg-purple-700 text-white rounded-lg shadow-lg hover:bg-purple-500 transition">
+          Volver al inicio
+        </a>
+      </div>
+    </div>
       </>
     )
   }

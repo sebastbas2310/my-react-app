@@ -1,3 +1,6 @@
+import { Menu } from "../menu/Menu";
+import { Link } from "react-router-dom";
+
 const Registro = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-900 to-black">
@@ -22,9 +25,9 @@ const Registro = () => {
             className="w-full p-2 mb-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
           <p className="text-xs text-gray-400 mb-4 text-right cursor-pointer hover:text-gray-200">¿Olvidaste tu contraseña?</p>
-          <button className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 rounded-lg font-semibold">
+          <Link to="/Principal" className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 rounded-lg font-semibold">
             INICIAR SESIÓN
-          </button>
+          </Link>
         </div>
 
         {/* Register Section */}

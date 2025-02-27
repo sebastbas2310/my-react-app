@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+
 export const Inicio = () => {
   return (
+    
     <div className="bg-black text-white min-h-screen flex flex-col justify-between">
       {/* Header */}
       <header className="bg-gradient-to-r from-purple-700 to-purple-900 text-center py-6">

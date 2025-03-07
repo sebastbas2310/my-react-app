@@ -1,20 +1,26 @@
 import { Menu } from "../menu/Menu";
+import { Link } from "react-router-dom"
+
+
 
 const courses = [
     {
       name: "Curso Boole",
       description: "Aprende álgebra de Boole de forma interactiva.",
       progress: 70,
+      direccion: "/Boole",
     },
     {
-      name: "Curso Programación con Bloques",
+      name: "Diagramas de clase",
       description: "Desarrolla lógica de programación sin necesidad de código.",
       progress: 50,
+      direccion: "/Diagramas"
     },
     {
       name: "Curso de Lógica Computacional",
       description: "Mejora tu pensamiento computacional con ejercicios desafiantes.",
       progress: 30,
+      direccion: "/LogicaComp"
     },
   ];
 
@@ -36,9 +42,9 @@ export const Principal = () => {
                 style={{ width: `${course.progress}%` }}
               ></div>
             </div>
-            <button className="bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-lg mt-2 transition">
+            <Link to = {course.direccion} className="bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-lg mt-2 transition">
               Entrar
-            </button>
+            </Link>
           </div>
         ))}
       </div>

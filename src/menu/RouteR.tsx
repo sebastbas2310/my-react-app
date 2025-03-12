@@ -4,7 +4,7 @@ import { ErrorComponent } from "./ErrorComponent";
 import  { Inicio } from "../components/Inicio";
 import Registro from "../components/Registro";
 import { Quiz } from "../components/Quiz";
-
+import { CursoBool } from "../components/CursoBool";
 
 export const RouterR = () => {
   return (
@@ -16,7 +16,7 @@ export const RouterR = () => {
             <Route path="/Registro" element={<Registro/>}/>
             <Route path="/Principal" element={<Principal/>}/>
             <Route path="/Quiz" element= {<Quiz/>}/>
-      
+            <Route path="/CursoBool" element= {<CursoBool/>}/>
             <Route path="*" element={<ErrorComponent/>}/>
             
            

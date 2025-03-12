@@ -8,7 +8,7 @@ const courses = [
       name: "Curso Boole",
       description: "Aprende álgebra de Boole de forma interactiva.",
       progress: 70,
-      direccion: "/Boole",
+      direccion: "../CursoBool",
     },
     {
       name: "Diagramas de clase",

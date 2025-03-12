@@ -4,7 +4,6 @@ import { ErrorComponent } from "./ErrorComponent";
 import  { Inicio } from "../components/Inicio";
 import Registro from "../components/Registro";
 import { Quiz } from "../components/Quiz";
-import { Documentacion } from "../components/documentacion/CursoBool";
 
 
 export const RouterR = () => {
@@ -17,8 +16,9 @@ export const RouterR = () => {
             <Route path="/Registro" element={<Registro/>}/>
             <Route path="/Principal" element={<Principal/>}/>
             <Route path="/Quiz" element= {<Quiz/>}/>
-            <Route path="/Cursos/CursoBool" element= {<Documentacion/>}/>
+      
             <Route path="*" element={<ErrorComponent/>}/>
+            
            
            
         

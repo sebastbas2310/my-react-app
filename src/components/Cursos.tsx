@@ -1,4 +1,4 @@
-export const Contact = () => {
+export const Cursos = () => {
     return(
         <>
         <div className="bg-gradient-to-r from-blue-800 via-blue-500 to-blue-200 p-4 flex space-x-4">
@@ -14,3 +14,5 @@ export const Contact = () => {
         </>
     )
 }
+
+export default Cursos;

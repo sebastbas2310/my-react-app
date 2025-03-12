@@ -22,7 +22,7 @@ export const  Preguntas =({respuesta, imagen}: {respuesta: string; imagen: strin
           <img
             src={imagen}
             alt="Pregunta"
-            className="w-full h-48 object-cover rounded-lg mb-4"
+            className="w-auto h-auto max-w-full rounded-lg"
           />
           <input
             type="text"

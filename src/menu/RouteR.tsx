@@ -7,6 +7,9 @@ import { Quiz } from "../components/Quiz";
 import { CursoBool } from "../components/CursoBool";
 import {CursoDiagrama} from "../components/CursoDiagrama";
 import {CursoComp} from "../components/CursoComp";
+import {PruebaBool} from "../Pruebas/PruebaBool"
+import {PruebaComp} from "../Pruebas/PruebaComp"
+import {PruebaDiagrama} from "../Pruebas/PruebaDiagrama"
 
 export const RouterR = () => {
   return (
@@ -21,6 +24,9 @@ export const RouterR = () => {
             <Route path="/CursoBool" element= {<CursoBool/>}/>
             <Route path="/Diagramas" element= {<CursoDiagrama/>}/>
             <Route path="/LogicaComp" element= {<CursoComp/>}/>
+            <Route path="/PruebaBool" element= {<PruebaBool/>}/>
+            <Route path="/PruebaComp" element= {<PruebaComp/>}/>
+            <Route path="/PruebaDiagrama" element= {<PruebaDiagrama/>}/>
             <Route path="*" element={<ErrorComponent/>}/>
             
            

@@ -3,7 +3,12 @@ import { Menu } from "../menu/Menu";
 
 
 export const Quiz = () => {
-    
+    const opcionesMap = new Map<number, string>([
+        [1, "Gato"],
+        [2, "Perro"],
+        [3, "Ratón"],
+        [4, "Sapo"]
+      ]);
     
     return (
         <>
@@ -25,3 +30,5 @@ export const Quiz = () => {
 
     )
 }
+
+export default Quiz

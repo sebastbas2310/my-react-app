@@ -33,7 +33,23 @@ export const CursoComp = () => {
             </div>
             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9emoN7tXlqaBnP_FWBPV1sj_01TchfMRf7cQVW6qUuGi9ZM-LuvF6ZXt6S8uNf6nyXtpMlocCteS4IZp8N_B6US_HzWOSwrpbOq4uLG-PRLh8DRX_FmYzyRGtnPrIUr-NH0RnuykNkuKi/s1600/metodo-sumar-java.png" alt="Funciones y Métodos" className="w-auto h-auto max-w-full rounded-lg"/>
         </div>
-        
+
+        <div className="bg-gray-800 rounded-xl p-6 my-4 flex items-center justify-between">
+            <div className="w-3/5 text-left">
+                <h2 className="text-xl font-semibold">Acciones de Usuario</h2>
+                <p>Como se sabe, existen multiples formas de implementar la accion de un usuario externo al programa para brindar un resultado, con ello se usa el codigo de <code>Scanner</code> o bien se declara un elemento de respuesta como se vera mas adelante </p>
+            </div> 
+            <img src="https://i.postimg.cc/fTBC0Yys/bdaa1492-a8ff-4f23-976f-14dbe34a9c09.jpg" alt="Acciones de Usuaio" className="w-auto h-auto max-w-full rounded-lg"/>
+        </div>
+
+        <div className="bg-gray-800 rounded-xl p-6 my-4 flex items-center justify-between">
+            <div className="w-3/5 text-left">
+                <h2 className="text-xl font-semibold">Matricez</h2>
+                <p>Una <code>Matriz</code> en un conjunto en tabla de varios elementos juntados entre si organizandose en un espacio en concreto dentro de la Tabla de la Matriz, es usualmente usada para almacenar y gestionar dichos elementos</p>
+            </div>  
+            <img src="https://i.postimg.cc/V669nWsM/e49fc4ab-72af-4d5a-b09e-8a99b46895df.jpg" alt="Matricez joya" className="w-auto h-auto max-w-full rounded-lg"/>
+        </div>
+
         <div className="my-6">
             <Link to="/PruebaComp" className="px-6 py-3 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-700" >Ir a la Prueba</Link>
         </div>

@@ -36,7 +36,7 @@ Uno a muchos: Un objeto se relaciona con varios otros (ejemplo: un profesor con 
 Muchos a muchos: Varios objetos de una clase pueden estar relacionados con varios objetos de otra (ejemplo: estudiantes y cursos).
 A diferencia de la agregación y la composición, la asociación no implica una relación de propiedad, solo de interacción entre objetos.</p>
             </div>
-            <img src="https://i.postimg.cc/hGd4Xq6g/Whats-App-Image-2025-03-11-at-9-31-15-PM-2.jpg" alt="Disyunción" className="w-auto h-auto max-w-full rounded-lg"/>
+            <img src="" alt="Disyunción" className="w-auto h-auto max-w-full rounded-lg"/>
         </div>
         
         <div className="bg-gray-800 rounded-xl p-6 my-4 flex items-center justify-between">

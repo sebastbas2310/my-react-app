@@ -3,10 +3,10 @@ import { useState } from "react";
 interface PreguntasMultiples {
   respuesta: string;
   imagen: string;
-  opciones: string[];
+  opciones: Map<number, string>;
 }
 
-export const Preguntas = ({ respuesta, imagen, opciones }: PreguntasMultiples) => {
+export const PreguntasMultiples = ({ respuesta, imagen, opciones }: PreguntasMultiples) => {
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [feedback, setFeedback] = useState("");
 
@@ -21,9 +21,9 @@ export const Preguntas = ({ respuesta, imagen, opciones }: PreguntasMultiples) =
         <img src={imagen} alt="Pregunta" className="w-full rounded-lg mb-4" />
 
         <div className="flex flex-col gap-2">
-          {opciones.map((opcion, index) => (
+          {[...opciones.entries()].map(([key, opcion])=> (
             <button
-              key={index}
+              key={key}
               onClick={() => setSelectedAnswer(opcion)}
               className={`w-full p-2 rounded font-semibold border 
                 ${selectedAnswer === opcion ? "bg-purple-700 text-white" : "bg-gray-800 text-gray-300"}

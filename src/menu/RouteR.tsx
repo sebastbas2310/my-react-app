@@ -10,7 +10,6 @@ import {CursoComp} from "../components/CursoComp";
 import {PruebaBool} from "../Pruebas/PruebaBool"
 import {PruebaComp} from "../Pruebas/PruebaComp"
 import {PruebaDiagrama} from "../Pruebas/PruebaDiagrama"
-
 export const RouterR = () => {
   return (
     <Router>

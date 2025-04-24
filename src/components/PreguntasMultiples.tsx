@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from "react"; 
 
 interface PreguntasMultiples {
   respuesta: string;
@@ -16,16 +16,16 @@ export const PreguntasMultiples = ({ respuesta, imagen, opciones }: PreguntasMul
   };
 
   return (
-    <div className="flex flex-col items-center p-4 bg-black text-white min-h-screen">
+    <div className="flex flex-col items-center p-4 bg-black text-white">
       <div className="w-96 bg-gray-900 text-white p-4 rounded-lg shadow-lg">
         <img src={imagen} alt="Pregunta" className="w-full rounded-lg mb-4" />
 
         <div className="flex flex-col gap-2">
-          {[...opciones.entries()].map(([key, opcion])=> (
+          {[...opciones.entries()].map(([key, opcion]) => (
             <button
               key={key}
               onClick={() => setSelectedAnswer(opcion)}
-              className={`w-full p-2 rounded font-semibold border 
+              className={`w-full px-2 py-1 text-sm rounded border font-medium 
                 ${selectedAnswer === opcion ? "bg-purple-700 text-white" : "bg-gray-800 text-gray-300"}
                 hover:bg-purple-600 transition`}
             >
@@ -36,14 +36,13 @@ export const PreguntasMultiples = ({ respuesta, imagen, opciones }: PreguntasMul
 
         <button
           onClick={checkAnswer}
-          className="w-full mt-4 p-2 bg-green-600 hover:bg-green-500 rounded text-white font-semibold"
+          className="w-full mt-3 px-2 py-1 bg-purple-600 hover:bg-green-500 rounded text-sm text-white font-medium"
         >
           Verificar
         </button>
 
-        {feedback && <p className="mt-2 text-lg">{feedback}</p>}
+        {feedback && <p className="mt-2 text-sm">{feedback}</p>}
       </div>
     </div>
   );
 };
-

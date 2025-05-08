@@ -1,63 +1,57 @@
-import { Link } from "react-router-dom";
+// CursoComp.tsx
+import React from "react";
+import { CursoSeccion } from "./CursoSeccion"; // Asegúrate que la ruta es correcta
 import { Menu } from "../menu/Menu";
 
-export const CursoComp = () => {
-  return(
+export const CursoComp: React.FC = () => {
+  // Contenido temático del curso
+  const secciones = [
+    {
+      titulo: "Estructuras Condicionales",
+      descripcion:
+        "Las estructuras condicionales permiten ejecutar diferentes bloques de código según una condición. En Java, la más común es if-else.",
+      imagenUrl:
+        "https://picodotdev.github.io/blog-bitix/2020/06/las-sentencias-de-control-de-flujo-en-java-if-switch-for-while-do-while-try-catch-break-continue-e-invocacion/images/sentencia-if-else_hu4171854708185839136.webp",
+    },
+    {
+      titulo: "Bucles e Iteraciones",
+      descripcion:
+        "Los bucles permiten repetir un bloque de código múltiples veces. Java ofrece for, while y do-while para iterar sobre estructuras de datos.",
+      imagenUrl:
+        "https://pablomonteserin.com/wp-content/uploads/2021/03/bucle-for.svg",
+    },
+    {
+      titulo: "Funciones y Métodos",
+      descripcion:
+        "Los métodos en Java encapsulan bloques de código reutilizables. Se declaran con public static o private, dependiendo de su acceso.",
+      imagenUrl:
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9emoN7tXlqaBnP_FWBPV1sj_01TchfMRf7cQVW6qUuGi9ZM-LuvF6ZXt6S8uNf6nyXtpMlocCteS4IZp8N_B6US_HzWOSwrpbOq4uLG-PRLh8DRX_FmYzyRGtnPrIUr-NH0RnuykNkuKi/s1600/metodo-sumar-java.png",
+    },
+    {
+      titulo: "Acciones de Usuario",
+      descripcion:
+        "Existen múltiples formas de implementar interacciones del usuario con el programa. Se utiliza Scanner o componentes para captar entrada externa.",
+      imagenUrl:
+        "https://i.postimg.cc/fTBC0Yys/bdaa1492-a8ff-4f23-976f-14dbe34a9c09.jpg",
+    },
+    {
+      titulo: "Matrices",
+      descripcion:
+        "Una Matriz es una estructura que organiza elementos en filas y columnas. Es útil para almacenar y manipular grandes volúmenes de datos.",
+      imagenUrl:
+        "https://i.postimg.cc/V669nWsM/e49fc4ab-72af-4d5a-b09e-8a99b46895df.jpg",
+    },
+  ];
+
+  return (
     <>
-      
-      <body className="bg-gray-900 text-white text-center">
-    <Menu/>
-    <div className="w-4/5 mx-auto">
-        <h1 className="text-3xl font-bold my-6">Lógica de Programación en Java</h1>
-        
-        <div className="bg-gray-800 rounded-xl p-6 my-4 flex items-center justify-between">
-            <div className="w-3/5 text-left">
-                <h2 className="text-xl font-semibold">Estructuras Condicionales</h2>
-                <p>Las estructuras condicionales permiten ejecutar diferentes bloques de código según una condición. En Java, la más común es <code>if-else</code>.</p>
-            </div>
-            <img src="https://picodotdev.github.io/blog-bitix/2020/06/las-sentencias-de-control-de-flujo-en-java-if-switch-for-while-do-while-try-catch-break-continue-e-invocacion/images/sentencia-if-else_hu4171854708185839136.webp" alt="Estructuras Condicionales" className="w-auto h-auto max-w-full rounded-lg"/>
-        </div>
-        
-        <div className="bg-gray-800 rounded-xl p-6 my-4 flex items-center justify-between">
-            <div className="w-3/5 text-left">
-                <h2 className="text-xl font-semibold">Bucles e Iteraciones</h2>
-                <p>Los bucles permiten repetir un bloque de código múltiples veces. Java ofrece <code>for</code>, <code>while</code> y <code>do-while</code> para iterar sobre estructuras de datos.</p>
-            </div>
-            <img src="https://pablomonteserin.com/wp-content/uploads/2021/03/bucle-for.svg" alt="Bucles e Iteraciones" className="w-auto h-auto max-w-full rounded-lg"/>
-        </div>
-        
-        <div className="bg-gray-800 rounded-xl p-6 my-4 flex items-center justify-between">
-            <div className="w-3/5 text-left">
-                <h2 className="text-xl font-semibold">Funciones y Métodos</h2>
-                <p>Los métodos en Java encapsulan bloques de código reutilizables. Se declaran con <code>public static</code> o <code>private</code>, dependiendo de su acceso.</p>
-            </div>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9emoN7tXlqaBnP_FWBPV1sj_01TchfMRf7cQVW6qUuGi9ZM-LuvF6ZXt6S8uNf6nyXtpMlocCteS4IZp8N_B6US_HzWOSwrpbOq4uLG-PRLh8DRX_FmYzyRGtnPrIUr-NH0RnuykNkuKi/s1600/metodo-sumar-java.png" alt="Funciones y Métodos" className="w-auto h-auto max-w-full rounded-lg"/>
-        </div>
-
-        <div className="bg-gray-800 rounded-xl p-6 my-4 flex items-center justify-between">
-            <div className="w-3/5 text-left">
-                <h2 className="text-xl font-semibold">Acciones de Usuario</h2>
-                <p>Como se sabe, existen multiples formas de implementar la accion de un usuario externo al programa para brindar un resultado, con ello se usa el codigo de <code>Scanner</code> o bien se declara un elemento de respuesta como se vera mas adelante </p>
-            </div> 
-            <img src="https://i.postimg.cc/fTBC0Yys/bdaa1492-a8ff-4f23-976f-14dbe34a9c09.jpg" alt="Acciones de Usuaio" className="w-auto h-auto max-w-full rounded-lg"/>
-        </div>
-
-        <div className="bg-gray-800 rounded-xl p-6 my-4 flex items-center justify-between">
-            <div className="w-3/5 text-left">
-                <h2 className="text-xl font-semibold">Matricez</h2>
-                <p>Una <code>Matriz</code> en un conjunto en tabla de varios elementos juntados entre si organizandose en un espacio en concreto dentro de la Tabla de la Matriz, es usualmente usada para almacenar y gestionar dichos elementos</p>
-            </div>  
-            <img src="https://i.postimg.cc/V669nWsM/e49fc4ab-72af-4d5a-b09e-8a99b46895df.jpg" alt="Matricez joya" className="w-auto h-auto max-w-full rounded-lg"/>
-        </div>
-
-        <div className="my-6">
-            <Link to="/PruebaComp" className="px-6 py-3 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-700" >Ir a la Prueba</Link>
-        </div>
-    </div>
-</body>
-
+      <Menu />
+      <CursoSeccion
+        secciones={secciones}
+        tituloCurso="Lógica de Programación en Java"
+        rutaQuiz="/PruebaComp"
+      />
     </>
-
   );
 };
 

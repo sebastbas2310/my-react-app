@@ -1,4 +1,4 @@
-import { Preguntas } from "../components/Preguntas";
+/*import { Preguntas } from "../components/Preguntas";
 import { PreguntasMultiples } from "../components/PreguntasMultiples";
 import { Menu } from "../menu/Menu";
 
@@ -13,8 +13,8 @@ export const PruebaComp = () => {
             <PreguntasMultiples respuesta = "NAN" imagen = "https://i.postimg.cc/TwHpXcHv/255b0a44-343d-43c2-b323-4ef339aab3d2.jpg"  opciones={new Map([
             [1, "NAN"],
             [2, "3b4"],
-            [3, "7b"],
-            [4, "a + b"]
+            [3, "4"],
+            [4, "∞"]
           ])} />
         </div>
         <div>
@@ -39,4 +39,4 @@ export const PruebaComp = () => {
     )
 }
 
-export default PruebaComp
+export default PruebaComp*/

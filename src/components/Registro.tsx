@@ -1,4 +1,4 @@
-import { Menu } from "../menu/Menu";
+
 import { Link } from "react-router-dom";
 
 const Registro = () => {

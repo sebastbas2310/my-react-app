@@ -7,8 +7,19 @@ export const Inicio = () => {
       {/* Header */}
       <header className="bg-gradient-to-r from-purple-700 to-purple-900 text-center py-6">
         <h1 className="text-3xl font-bold">LogicRush</h1>
+        <div className="flex justify-center my-4">
+          <img 
+            src="https://i.postimg.cc/JhNWfYx5/unnamed.png" 
+            alt="LogicRush Logo" 
+            className="w-32 h-32 rounded-full shadow-lg shadow-purple-200/50"
+          />
+        </div>
         <p className="text-lg font-semibold">Aprende lógica de programación <span className="text-purple-300">de forma rápida e interactiva</span></p>
+        <p>-----------------</p>
+        <p>■■■</p>
         <Link to="/Registro" className="mt-4 bg-purple-500 hover:bg-purple-600 text-white py-2 px-6 rounded-lg">EMPEZAR</Link>
+        <p>■■■</p>
+        <p>-----------------</p>
       </header>
       
       {/* Navigation */}
@@ -77,7 +88,7 @@ export const Inicio = () => {
       <footer className="bg-purple-900 text-center py-4">
         <p className="text-sm">Derechos reservados (2021-2033)</p>
         <div className="flex justify-center space-x-4 mt-2">
-          {['Twitter', 'Instagram', 'Facebook', 'Gmail'].map((social) => (
+          {['Twitter 𝕏', 'Instagram 📸', 'Facebook ⓕ', 'Gmail ✉'].map((social) => (
             <button key={social} className="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg text-white">{social}</button>
           ))}
         </div>

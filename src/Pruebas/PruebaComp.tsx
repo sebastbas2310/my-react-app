@@ -1,4 +1,4 @@
-import { Preguntas } from "../components/Preguntas";
+/*import { Preguntas } from "../components/Preguntas";
 import { PreguntasMultiples } from "../components/PreguntasMultiples";
 import { Menu } from "../menu/Menu";
 
@@ -39,4 +39,4 @@ export const PruebaComp = () => {
     )
 }
 
-export default PruebaComp
+export default PruebaComp*/

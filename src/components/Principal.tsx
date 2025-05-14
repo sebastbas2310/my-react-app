@@ -107,7 +107,7 @@ export const Principal = () => {
         <div className="bg-purple-900 bg-opacity-20 border border-purple-500 rounded-xl p-6 w-full max-w-4xl mb-8 shadow-md">
           <h2 className="text-2xl font-bold text-purple-300 mb-2">📰 Noticias</h2>
           <p className="text-gray-300">
-            <strong>Actualización del sistema (v1.1):</strong> Se ha mejorado el rendimiento de carga
+            <strong>Actualización del sistema (v1.12):</strong> Se ha mejorado el rendimiento de carga
             de los cursos y se ha implementado una nueva animación para las tarjetas.
           </p>
         </div>

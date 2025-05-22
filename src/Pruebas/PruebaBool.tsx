@@ -9,14 +9,14 @@ export const PruebaBool: React.FC = () => {
       texto: '¿Es el enunciado correcto?', 
       tipo: 'vof', 
       respuesta: false, 
-      imagen: 'https://i.postimg.cc/X7tkZLZs/3859ba21-26fb-4d07-b461-479ac2377c94.jpg' 
+      imagen: 'https://i.postimg.cc/C5pjtsvr/lv-0-20250508083935.gif' 
     },
     { 
       id: 2, 
       texto: '¿Es el enunciado correcto?', 
       tipo: 'vof', 
       respuesta: true, 
-      imagen: 'https://i.postimg.cc/X7Bw052d/a0fc74f7-8ebb-4340-8895-dc3c7c760563.jpg' 
+      imagen: 'https://i.postimg.cc/qqqT8FWf/lv-0-20250508083824.gif' 
     },
     { 
       id: 3, 
@@ -36,20 +36,20 @@ export const PruebaBool: React.FC = () => {
       texto: '¿Es el enunciado correcto?', 
       tipo: 'vof', 
       respuesta: true, 
-      imagen: 'https://i.postimg.cc/1XqKm70h/a68578db-9d12-4dec-8f24-9e7ea6554207.jpg' 
+      imagen: 'https://i.postimg.cc/L6hCDKDX/20250508-130306.gif' 
     },
     { 
       id: 5, 
       texto: '¿Es el enunciado correcto?', 
       tipo: 'vof', 
       respuesta: true, 
-      imagen: 'https://i.postimg.cc/vZqxKL9W/0e6486f2-563e-4fe1-9ff7-c0a5d0212073.jpg' 
+      imagen: 'https://i.postimg.cc/G2CyXFjh/20250508-125702.gif' 
     },
   ];
 
   const manejarFinalizacion = (aciertos: number) => {
     alert(`Juego terminado. Acertaste ${aciertos} preguntas.`);
-    window.location.href = '../CursoBool'; // Redirige al curso o página deseada
+    window.location.href = '../CursoComp'; // Redirige al curso o página deseada
   };
 
   return (
